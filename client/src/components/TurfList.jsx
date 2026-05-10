@@ -10,7 +10,7 @@ function TurfList() {
 
     useEffect(() => {
 
-        axios.get("https://box-cricket-booking.onrender.com")
+        axios.get("https://box-cricket-booking.onrender.com/api/turfs")
         .then(res => setTurfs(res.data))
         .catch(err => console.log(err));
 
