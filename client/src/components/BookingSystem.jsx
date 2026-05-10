@@ -19,7 +19,7 @@ function BookingSystem({ turf }) {
 
     useEffect(() => {
 
-        axios.get("http://localhost:5000/api/bookings")
+        axios.get("https://box-cricket-booking.onrender.com")
         .then(res => setBookings(res.data))
         .catch(err => console.log(err));
 
